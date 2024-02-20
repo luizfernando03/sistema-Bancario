@@ -1,2 +1,4 @@
-package conta;public class ContaInvestimento {
+package conta;
+
+public class ContaInvestimento {
 }
