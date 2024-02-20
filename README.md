@@ -1,5 +1,5 @@
-Desenvolver uma aplicação que simule uma aplicação bancária. Os clientes podem ser pessoa 
-<sica ou jurídica. Para clientes pessoa jurídica (PJ), existe a cobrança de uma taxa de 0.5% 
+Foi desenvolvido uma aplicação que simule uma aplicação bancária. Os clientes podem ser pessoa 
+fsica ou jurídica. Para clientes pessoa jurídica (PJ), existe a cobrança de uma taxa de 0.5% 
 para cada saque ou transferência. Além do produto conta-corrente, os clientes pessoa <sica 
 (PF) podem abrir uma conta-poupança e conta-inves(mento. Clientes PJ não podem abrir 
 poupança, mas seus rendimentos em conta-inves(mento rendem 2% a mais.
