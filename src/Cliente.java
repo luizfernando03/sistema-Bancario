@@ -1,5 +1,3 @@
-import conta.Conta;
-
 import java.util.List;
 
 public class Cliente {
@@ -49,5 +47,5 @@ public class Cliente {
     public List<Conta> getContas() {
         return contas;
     }
-    
+
 }
