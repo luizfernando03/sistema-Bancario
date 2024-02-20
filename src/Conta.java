@@ -2,17 +2,17 @@ import java.math.BigDecimal;
 
 public abstract class Conta {
     protected Cliente cliente;
-    protected BigDecimal saldoi;
+    protected BigDecimal saldo;
     protected String numeroConta;
     protected String agencia;
     protected TipoConta tipoConta;
 
-    public Conta(Cliente cliente, BigDecimal saldoi, String numeroConta, String agencia, TipoConta tipoConta) {
+    public Conta(Cliente cliente, String numeroConta, String agencia, TipoConta tipoConta) {
         this.cliente = cliente;
-        this.saldoi = saldoi;
         this.numeroConta = numeroConta;
         this.agencia = agencia;
         this.tipoConta = tipoConta;
+        this.saldo = BigDecimal.ZERO;
     }
 
     public  abstract void depositar(BigDecimal valor);
@@ -23,8 +23,8 @@ public abstract class Conta {
         return cliente;
     }
 
-    public BigDecimal getSaldoi() {
-        return saldoi;
+    public BigDecimal getSaldo() {
+        return saldo;
     }
 
     public String getNumeroConta() {
