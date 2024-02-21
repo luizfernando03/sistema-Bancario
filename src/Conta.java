@@ -2,29 +2,19 @@ import java.math.BigDecimal;
 
 public abstract class Conta {
     protected Cliente cliente;
-    protected BigDecimal saldo;
     protected String numeroConta;
     protected String agencia;
-    protected TipoConta tipoConta;
+    protected BigDecimal saldo;
 
-    public Conta(Cliente cliente, String numeroConta, String agencia, TipoConta tipoConta) {
+    public Conta(Cliente cliente, String numeroConta, String agencia, BigDecimal saldo) {
         this.cliente = cliente;
         this.numeroConta = numeroConta;
         this.agencia = agencia;
-        this.tipoConta = tipoConta;
-        this.saldo = BigDecimal.ZERO;
+        this.saldo = saldo;
     }
-
-    public  abstract void depositar(BigDecimal valor);
-
-    public abstract void sacar(BigDecimal valor);
 
     public Cliente getCliente() {
         return cliente;
-    }
-
-    public BigDecimal getSaldo() {
-        return saldo;
     }
 
     public String getNumeroConta() {
@@ -35,8 +25,12 @@ public abstract class Conta {
         return agencia;
     }
 
-    public TipoConta getTipoConta() {
-        return tipoConta;
+    public BigDecimal getSaldo() {
+        return saldo;
     }
-    
+
+    // Métodos abstratos a serem implementados pelas subclasses
+    public abstract void depositar(BigDecimal valor);
+
+    public abstract void sacar(BigDecimal valor);
 }
