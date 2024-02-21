@@ -10,7 +10,7 @@ public abstract class Conta {
         this.cliente = cliente;
         this.numeroConta = numeroConta;
         this.agencia = agencia;
-        this.saldo = saldo;
+        this.saldo = BigDecimal.ZERO;
     }
 
     public Cliente getCliente() {

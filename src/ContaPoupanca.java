@@ -4,8 +4,8 @@ public class ContaPoupanca extends Conta{
 
     private static final BigDecimal Rendimentos = BigDecimal.valueOf(0.02);
 
-    public ContaPoupanca(Cliente cliente, String numeroConta, String agencia) {
-        super(cliente,numeroConta, agencia, TipoConta.POUPANCA);
+    public ContaPoupanca(Cliente cliente, String numero, String agencia) {
+        super(cliente,numero, agencia);
     }
 
     @Override
