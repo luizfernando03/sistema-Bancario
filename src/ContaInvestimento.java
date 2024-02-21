@@ -6,7 +6,7 @@ public class ContaInvestimento extends Conta{
 
     // Construtor
     public ContaInvestimento(Cliente cliente, String numero, String agencia) {
-        super(cliente, numero, agencia);
+        super(cliente, numeroConta, agencia);
     }
 
     // Implementação do método depositar
